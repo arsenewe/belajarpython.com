@@ -62,6 +62,19 @@ print(biodata) #proses pencetakan variabel biodata yang berisi tipe data Diction
 type(biodata) #fungsi untuk mengecek jenis tipe data. akan tampil <class 'dict'> yang berarti dict adalah tipe data dictionary
 {% endhighlight %}
 
+## Contoh Kasus (Program Kalkulator Umur)
+Perhatikan kode berikut
+```py
+tahun_lahir = input('Tahun Lahir Kamu: ')
+umur = 2019 - tahun_lahir
+print(age)
+```
+Jika kode di atas dijalankan maka yang terjadi adalah error yang menyatakan kesalahan tipe data int yang konflik dengan tipe data str. Oleh karena itu dibutuhkan konversi tipe data supaya penghitungan umur menjadi valid. Kode yang valid adalah sebagai berikut:
+```py
+tahun_lahir = input('Tahun Lahir Kamu: ')
+umur = 2019 - int(tahun_lahir)
+print(age)
+```
 
 ---
 
